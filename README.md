@@ -16,6 +16,10 @@ In this little example repo, I am focusing on querying and associations settup a
 ---
 You see sometimes (most times) I use {raw: true}, when querying.  This is because I am mostly interested in just the raw data from the mysql database most of the time.  If you set {raw: false} (which it is by default), the promise returns you sequelize objects instead of just raw data.  This is useful if you need/want to use functions and methods that are part of them, like addUser and whatnot.
 
+And for another note, if you are making large changes to your models, especially constraints, you may have to drop your database completely in mysql.  Even though we are ```{force_sync: true}```, it doesn't always get rid of extra constaraints that may be left over in mysql from when you changed your models.  So if your code is acting not like you expect, try dropping the entire database to see if it helps.
+
+There are ways to drop constraints in mysql directly without killing the whole db, but I don't know enough of mysql to be able to tell you which ones are causing the problem, but be aware that they exist if you want to do some learning on your own.
+
 ---
 
 For Sequelize [belongsToMany](http://docs.sequelizejs.com/manual/tutorial/associations.html#belongs-to-many-associations) ,
