@@ -1,5 +1,13 @@
 # sequelize-practice
 
+This is a small node express app with routes defined on /test/1 through /test/10 to see how sequelize does querying.  And I have added a seperate routes file mounted to '/' for you to add your own routes for testing.
+
+I have some dummySeeds and models set up to help with testing/practice.
+
+You'll need to ```create database test_database``` in mysql before the server will work correctly.  And also be sure to change the password in config.json to whatever your local mysql password is.
+
+----
+
 
 For testing purposes, I recommend res.json() query results to the browswer and letting Chrome's Json formatter make then easier to read.  It is much easier to see what exactly the query is return you than if you tried to console.log it in the termnial.
 
