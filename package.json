@@ -1,0 +1,25 @@
+{
+  "name": "sequelize-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagentaReds/sequelize-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagentaReds/sequelize-practice/issues"
+  },
+  "homepage": "https://github.com/MagentaReds/sequelize-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  }
+}
